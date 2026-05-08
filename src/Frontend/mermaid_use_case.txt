@@ -1,0 +1,25 @@
+usecaseDiagram
+    actor Admin
+    
+    package "Authentication & Registration" {
+        usecase "Process Login" as UC1
+        usecase "Register New Admin Account" as UC2
+    }
+
+    package "Homepage Sidebar Options" {
+        usecase "View Dashboard" as UC3
+        usecase "View Residents" as UC4
+        usecase "View Certificates" as UC5
+        usecase "View Blotter" as UC6
+        usecase "View Officials Info" as UC7
+        usecase "Perform Logout" as UC8
+    }
+
+    Admin --> UC1
+    Admin --> UC2
+    Admin --> UC3
+    Admin --> UC4
+    Admin --> UC5
+    Admin --> UC6
+    Admin --> UC7
+    Admin --> UC8
